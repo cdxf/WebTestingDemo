@@ -16,7 +16,10 @@
     "webdriverio": "^4.2.16"
   },
   "scripts": {
-    "test": "mocha"
+	"postinstall": "./node_modules/.bin/selenium-standalone install",
+    "start": "./node_modules/.bin/wdio",
+	"server": "start /b \"\" \".\\node_modules\\.bin\\selenium-standalone\\\" start 2^> temp.txt",
+	"test": "./node_modules/.bin/wdio"
   },
   "repository": {
     "type": "git",
