@@ -1,0 +1,30 @@
+{
+  "name": "web-testing-demo",
+  "version": "1.0.0",
+  "description": "Demo For Mocha and Selenium.",
+  "main": "wdio.conf.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "wdio-spec-reporter": "^0.0.3",
+    "wdio-mocha-framework": "^0.4.6",
+    "webdriverio": "^4.2.16"
+  },
+  "devDependencies": {
+    "webdriverio": "^4.2.16"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/snoobvn/WebTestingDemo.git"
+  },
+  "author": "Snoob",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/snoobvn/WebTestingDemo/issues"
+  },
+  "homepage": "https://github.com/snoobvn/WebTestingDemo#readme"
+}
