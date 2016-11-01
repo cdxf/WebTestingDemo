@@ -27,10 +27,10 @@ describe('Youtube',function(){
 		});
 	});
 	describe('search for a keyword', function() {
-		before(function() {
+		it("open Youtube", function() {
 		browser
 			.url('https://www.youtube.com')
-			.setValue('#masthead-search-term', 'Bao Lời Hoa Mỹ')
+			.setValue('#masthead-search-term', 'Em Có Yêu Anh Không')
 			.keys('\uE007');
 		});
 		it('should have number of results (.num-results)', function() {
