@@ -12,6 +12,7 @@
     "webdriverio": "^4.2.16"
   },
   "devDependencies": {
+    "selenium-standalone": "^5.8.0",
     "webdriverio": "^4.2.16"
   },
   "scripts": {
