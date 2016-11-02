@@ -1,6 +1,6 @@
-
+.temp
+errorShots/
 # Created by https://www.gitignore.io/api/node,intellij
-
 ### Node ###
 # Logs
 logs
