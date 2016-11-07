@@ -1,5 +1,5 @@
 var options = {};
-options.useTestingBot = true;
+options.useTestingBot = false;
 options.testingbot = {
     services: ['testingbot'],
     user: 'e9539ff401c7dbdc29f90e104d035283',
