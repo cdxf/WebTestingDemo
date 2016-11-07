@@ -23,6 +23,18 @@ Demo For Mocha and Selenium.
 3. Chạy test:
 `npm start`
 
+**Chạy test trên cloud**
+
+1.	Vào thư mục chứa project: 
+`cd WebTestingDemo`
+2. Vào options.js đặt `options.useTestingBot = true;`
+3. Chạy test:
+`npm start`
+4. Đăng nhập vào testingbot.com để theo dõi quá trình test:  
+Email: snoob.bot@gmail.com
+Password: snoobbot123
 Pass test:
 
 ![Result](http://2.pik.vn/2016b978dc4b-1e97-45dc-9a4b-be9c8e286958.png)
+
+![CloudTesting](http://2.pik.vn/20168f9809c4-1232-46fd-9992-a6d2f59284ac.png)

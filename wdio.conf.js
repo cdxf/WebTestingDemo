@@ -1,3 +1,4 @@
+let options = require('./options.js');
 exports.config = {
     
     //
@@ -119,7 +120,8 @@ exports.config = {
     // Options to be passed to Mocha.
     // See the full list at http://mochajs.org/
     mochaOpts: {
-        ui: 'bdd'
+        ui: 'bdd',
+        timeout: 60000
     },
     //
     // =====
@@ -182,4 +184,7 @@ exports.config = {
     // possible to defer the end of the process using a promise.
     // onComplete: function(exitCode) {
     // }
+}
+if(options.useTestingBot){
+    Object.assign(exports.config,options.testingbot);
 }

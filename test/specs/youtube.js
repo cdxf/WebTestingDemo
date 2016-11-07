@@ -1,14 +1,16 @@
 var assert = require('assert');
-var env = require('./../../yt-env.js');
+var youtube = require('./../../options.js').youtube;
 describe('Youtube',function(){
 	describe('login into', function() {
 		before(function() {
 		browser
 			.url('https://www.youtube.com')
-			.click('.yt-uix-button-content');
+			.waitForExist('.yt-uix-button-content',10000);
+            browser.click('span=Sign in');
 		});
 		it('should have login form', function() {
-			browser.element("h2*=Sign in to continue to YouTube").waitForText(5000);
+            browser.waitForExist('h2*=Sign in to continue to YouTube',10000);
+			browser.element("h2*=Sign in to continue to YouTube").waitForText(10000);
 			let text = browser.getText("h2*=Sign in to continue to YouTube");
 			assert.equal("Sign in to continue to YouTube",text);
 		});
@@ -16,12 +18,12 @@ describe('Youtube',function(){
 			browser
 			.waitForExist('#Email',5000);
 			browser
-			.setValue('#Email',env.username)
+			.setValue('#Email',youtube.username)
 			.click('#next');
 			browser
 			.waitForExist('#Passwd',5000);
 			browser
-			.setValue("#Passwd",env.password)
+			.setValue("#Passwd",youtube.password)
 			.click('#signIn')
 			.waitForExist('#yt-masthead-account-picker');
 		});

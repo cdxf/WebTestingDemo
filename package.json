@@ -7,19 +7,21 @@
     "test": "test"
   },
   "dependencies": {
-    "wdio-spec-reporter": "^0.0.3",
+    "faker": "^3.1.0",
     "wdio-mocha-framework": "^0.4.6",
+    "wdio-spec-reporter": "^0.0.3",
     "webdriverio": "^4.2.16"
   },
   "devDependencies": {
     "selenium-standalone": "^5.8.0",
+    "wdio-testingbot-service": "^0.1.6",
     "webdriverio": "^4.2.16"
   },
   "scripts": {
-	"postinstall": "./node_modules/.bin/selenium-standalone install",
+    "postinstall": "./node_modules/.bin/selenium-standalone install",
     "start": "./node_modules/.bin/wdio || true",
-	"server": "start /b \"\" \".\\node_modules\\.bin\\selenium-standalone\\\" start 2^> .temp",
-	"test": "./node_modules/.bin/wdio"
+    "server": "start /b \"\" \".\\node_modules\\.bin\\selenium-standalone\\\" start 2^> .temp",
+    "test": "./node_modules/.bin/wdio"
   },
   "repository": {
     "type": "git",
